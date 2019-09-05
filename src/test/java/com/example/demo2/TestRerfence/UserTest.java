@@ -4,8 +4,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class UserTest {
     User user;
     @Before
@@ -14,6 +12,11 @@ public class UserTest {
         user.setName("小明");
         user.setAge(1);
         System.out.println(user);
+
+        User cloneUser = user;
+        Child child = new Child();
+        child.test();
+
     }
 
     @After

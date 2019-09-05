@@ -1,11 +1,18 @@
 package com.example.demo2.TestRerfence;
 
-public class User {
+public class User{
     private String name;
     private int age;
 
     public String getName() {
         return name;
+    }
+
+    protected void test(){
+        System.out.println(123);
+        int[] as={};
+        as.clone();
+
     }
 
     public void setName(String name) {
@@ -19,8 +26,6 @@ public class User {
     public void setAge(int age) {
         this.age = age;
     }
-
-
 
     @Override
     public String toString() {
